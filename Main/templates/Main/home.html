@@ -1,0 +1,27 @@
+{% extends 'Main/base.html' %}
+{% load static %}
+
+<!-- Главная страница -->
+
+{% block content %}
+
+<div class="container p-3">
+    <div class="row">
+
+        <img class="col-auto w-25 h-25" src="{% static 'Main/img/MyPhoto.jpg' %}" alt="Мое фото">
+        
+        <div class="col border border-dark bg-light">
+            <h1>Сайгитов Гаджимурад Русланович</h1>
+            <h3>Кратко обо мне:</h3>
+            <h5>Живу в Москве, учусь в 11 ИТ классе, 16 лет.</h5>
+            <h5>Люблю программировать. Хорошо знаю Python и имею базовые знания о С++.</h5>
+            <h5>Увлекаюсь компьтерными играми, пару раз пробовал создание игр на движке UnrealEngine.</h5>
+            <h5>Так же мне нравится создание сайтов. У меня был опыт создания <a href="https://sinkingship.herokuapp.com/">сайта</a>
+                в команде, где я отвечал за Django. Работе с Django я обучался самостоятельно, используя интернет-ресурсы.
+            </h5>
+        </div>
+
+    </div>
+</div>
+
+{% endblock  %}
